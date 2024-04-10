@@ -4,3 +4,58 @@
     font-family: 'Montserrat', sans-serif;
 
 }
+
+* h1 {
+    font-size: 50px;
+}
+
+body {
+    background-image: url('image.png');
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+
+section ul {
+    list-style-type: none;
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+
+section ul li {
+    background-color: black;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    border: 1px solid white;
+    width: 34%;
+
+}
+
+nav * li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 20px;
+
+}
+
+nav ul {
+    display: flex;
+
+
+}
