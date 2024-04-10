@@ -11,6 +11,9 @@
 
 body {
     background-image: url('image.png');
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
 }
 
@@ -22,33 +25,56 @@ section {
     width: 100%;
 }
 
+
+
 section ul {
     list-style-type: none;
     align-content: center;
     text-align: center;
-    color: white;
+    color: rgb(245, 245, 220);
+    border: rgb(245, 245, 220) 3px solid;
 }
 
 section ul li {
     background-color: black;
 }
 
+section.menu {
+    height: 0vh;
+
+}
+
+section.menu ul {
+    text-align: left;
+    background-color: rgb(224, 143, 36);
+    border: brown 3px solid;
+
+}
+
+section.menu ul li {
+    text-align: left;
+    background-color: rgb(224, 143, 36);
+    margin: 20px;
+}
+
+
 header {
     background-color: #000000;
-    color: white;
+    color: rgb(245, 245, 220);
     text-align: center;
+    border: rgb(245, 245, 220) 1px solid;
 }
 
 nav li {
     display: inline;
-    border: 1px solid white;
+    border: 1px solid rgb(245, 245, 220);
     width: 34%;
 
 }
 
 nav * li a {
     text-decoration: none;
-    color: white;
+    color: rgb(245, 245, 220);
     display: block;
     font-size: 20px;
 
@@ -58,4 +84,8 @@ nav ul {
     display: flex;
 
 
+}
+
+footer {
+    margin-top: auto;
 }
