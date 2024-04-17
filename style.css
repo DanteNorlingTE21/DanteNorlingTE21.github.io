@@ -11,6 +11,8 @@
 
 body {
     background-image: url('image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -25,6 +27,19 @@ section {
     width: 100%;
 }
 
+section.image {
+    height: 60vh;
+    margin-bottom: 4vh;
+
+}
+
+.image img {
+    max-height: 100%;
+    /* This will make sure the image is never wider than its container */
+    height: auto;
+    /* This will maintain the aspect ratio of the image */
+    border: brown 3px solid;
+}
 
 
 section ul {
@@ -64,7 +79,17 @@ section.booking {
 
 }
 
-.booking div {
+section.about {
+    color: rgb(245, 245, 220);
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+
+.booking div,
+.about div {
     background-color: rgb(0, 0, 0);
     width: 50%;
     text-align: center;
