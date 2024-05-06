@@ -2,23 +2,27 @@ document.getElementsByTagName("header")[0].innerHTML = "<h1>Chef Tingeling</h1> 
 document.getElementsByTagName("footer")[0].innerHTML = "<p>© 2021 Chef Tingeling</p>";
 
 var h1Element = document.querySelector('section div ul li h1.lunch');
-if (window.innerWidth <= 750 && window.innerWidth > 440) {
-    h1Element.textContent = 'Lunch- servering';
-} else if (window.innerWidth <= 440) {
-    h1Element.textContent = 'Lunch';
-}
-else {
-    h1Element.textContent = 'Lunchservering';
+if (h1Element != null) {
+    if (window.innerWidth <= 750 && window.innerWidth > 440) {
+        h1Element.textContent = 'Lunch- servering';
+    } else if (window.innerWidth <= 440) {
+        h1Element.textContent = 'Lunch';
+    }
+    else {
+        h1Element.textContent = 'Lunchservering';
+    }
 }
 
 var h1Element = document.querySelector('section div ul li h1.middag');
-if (window.innerWidth <= 850 && window.innerWidth > 440) {
-    h1Element.textContent = 'Middags- servering';
-} else if (window.innerWidth <= 440) {
-    h1Element.textContent = 'Middag';
-}
-else {
-    h1Element.textContent = 'Middagsservering';
+if (h1Element != null) {
+    if (window.innerWidth <= 850 && window.innerWidth > 440) {
+        h1Element.textContent = 'Middags- servering';
+    } else if (window.innerWidth <= 440) {
+        h1Element.textContent = 'Middag';
+    }
+    else {
+        h1Element.textContent = 'Middagsservering';
+    }
 }
 
 
