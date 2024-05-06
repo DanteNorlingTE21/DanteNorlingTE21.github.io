@@ -69,8 +69,8 @@ section.booking {
 }
 
 section.about {
-    margin-top: 40px;
-    margin-bottom: 3vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
     color: rgb(245, 245, 220);
     flex-direction: column;
     justify-content: center;
@@ -78,57 +78,60 @@ section.about {
 
 }
 
+
 @media(max-width:1100px) {
     section.about {
-        margin-top: 60px;
+        margin-top: 120px;
 
     }
 }
 
 @media(max-width:900px) {
     section.about {
-        margin-top: 80px;
+        margin-top: 140px;
 
     }
 }
 
 @media(max-width:800px) {
     section.about {
-        margin-top: 95px;
+        margin-top: 155px;
 
     }
 }
 
 @media(max-width:700px) {
     section.about {
-        margin-top: 110px;
+        margin-top: 170px;
 
     }
 }
 
 @media(max-width:600px) {
     section.about {
-        margin-top: 70px;
+        margin-top: 130px;
 
     }
 }
 
 @media(max-width:500px) {
     section.about {
-        margin-top: 50px;
+        margin-top: 110px;
 
     }
 }
 
 @media(max-width:400px) {
     section.about {
-        margin-top: 40px;
+        margin-top: 100px;
 
     }
 }
 
 section.image {
-    margin-top: 100px;
+
+    min-height: 300px;
+    margin-top: 50px;
     height: 60vh;
     margin-bottom: 4vh;
 
@@ -136,16 +139,19 @@ section.image {
 
 .image img {
     max-width: 90vw;
+
     /* This will make sure the image is never wider than its container */
     height: auto;
     /* This will maintain the aspect ratio of the image */
     border: brown 3px solid;
+    margin: auto;
 }
 
 
 .booking div,
 .about div {
     background-color: #2b1d0ac7;
+    margin: auto;
     min-width: 330px;
     max-width: 600px;
     text-align: center;
