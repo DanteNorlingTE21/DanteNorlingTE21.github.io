@@ -39,7 +39,7 @@
             align-items: stretch;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 620px) {
             section.menu {
                 flex-direction: column;
                 align-items: center;
@@ -47,9 +47,43 @@
         }
 
         section.menu div {
-            height: 100%;
+            min-height: 400px;
             text-align: center;
             color: rgb(245, 245, 220);
+        }
+
+        #middag {
+            min-height: 550px;
+        }
+
+        @media screen and (max-width: 1070px) {
+            section.menu div {
+                min-height: 450px;
+            }
+        }
+
+        @media screen and (max-width: 770px) {
+            section.menu div {
+                min-height: 350px;
+            }
+        }
+
+        @media screen and (max-width: 1220px) {
+            #middag {
+                min-height: 500px;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            #middag {
+                min-height: 450px;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            #middag {
+                min-height: 400px;
+            }
         }
 
         section.menu div img {
@@ -110,20 +144,20 @@
             </div>
         </section>
         <section class="menu">
-            <div>
+            <div id="middag">
                 <img width="580" height="580" src="grillade_lammracks_med_rosmarin.webp"
                     srcset="grillade_lammracks_med_rosmarin.webp 580w, grillade_lammracks_smallest.webp 300w"
                     sizes="(max-width: 900px) 300px, 580px" alt="Grillat lamm">
                 <h2>Grillad lammracks med rosmarinsås och karamelliserade rotfrukter - 150 kr</h2>
             </div>
-            <div>
+            <div id="middag">
                 <img width="600" height="600"
                     src="pankopanerad-spatta-med-brynt-smoremulsion-och-frasch-gurksallad-foto-sanna-livijn-wexell-original-800x800_smaller.webp"
                     srcset="pankopanerad-spatta-med-brynt-smoremulsion-och-frasch-gurksallad-foto-sanna-livijn-wexell-original-800x800_smaller.webp 600w, pankopanerad-spatta_smallest.webp 300w"
                     sizes="(max-width: 900px) 300px, 600px" alt="stekt flundra">
                 <h2>Pankostekt hälleflundra med saffransrisotto och smörad spenat - 120 kr</h2>
             </div>
-            <div>
+            <div id="middag">
                 <img width="600" height="600" src="imagen_blog_confitpato02-min_smaller.webp"
                     srcset="imagen_blog_confitpato02-min_smaller.webp 600w, imagen_blog_confitpato02-min_smallest.webp 300w"
                     sizes="(max-width: 900px) 300px, 600px" alt="ankbröst">
