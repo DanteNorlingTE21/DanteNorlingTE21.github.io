@@ -7,6 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chef Tingeling</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+            width: 100%;
+        }
+
+        section ul {
+            list-style-type: none;
+            align-content: center;
+            text-align: center;
+            color: rgb(245, 245, 220);
+
+        }
+
+        section div {
+            background-color: #2b1d0ac7;
+            padding: 10px;
+            border: rgb(245, 245, 220) 3px solid;
+            width: 50vw;
+
+        }
+
+        section.menu {
+            display: flex;
+            flex-direction: row;
+            height: auto;
+            align-items: stretch;
+        }
+
+        @media screen and (max-width: 600px) {
+            section.menu {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        section.menu div {
+            height: 100%;
+            text-align: center;
+            color: rgb(245, 245, 220);
+        }
+
+        section.menu div img {
+            width: 100%;
+            object-fit: contain;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -27,15 +78,21 @@
         </section>
         <section class="menu">
             <div>
-                <img src="fish-internal-temperatures-sq.jpg_smaller.webp" alt="Stekt torsk">
+                <img width="600" height="600" src="fish-internal-temperatures-sq.jpg_smaller.webp"
+                    srcset="fish-internal-temperatures-sq.jpg_smaller.webp 600w, fish-internal-temperatures-smallest.webp 300w"
+                    sizes="(max-width: 900px) 300px, 600px" alt="Stekt torsk">
                 <h2>Smörstekt torsk med citron- och dillsås - 150 kr</h2>
             </div>
             <div>
-                <img src="tomato-carbonara-louise-laurenius18-1-600x600.webp" alt="Pasta carbonara">
+                <img width="600" height="600" src="tomato-carbonara-louise-laurenius18-1-600x600.webp"
+                    srcset="tomato-carbonara-louise-laurenius18-1-600x600.webp 600w, tomato-carbonara_smallest.webp 300w"
+                    sizes="(max-width: 900px) 300px, 600px" alt="Pasta carbonara">
                 <h2>Krämig pasta carbonara med parmaskinka - 120 kr</h2>
             </div>
             <div>
-                <img src="Sommarfrasch-Quinoasallad-med-Citron-och-Avokado_smaller.webp" alt="quinoasallad">
+                <img width="600" height="600" src="Sommarfrasch-Quinoasallad-med-Citron-och-Avokado_smaller.webp"
+                    srcset="Sommarfrasch-Quinoasallad-med-Citron-och-Avokado_smaller.webp 600w, Sommarfrasch-Quinoasallad_smallest.webp 300w"
+                    sizes="(max-width: 900px) 300px, 600px" alt="quinoasallad">
                 <h2>Vegetarisk quinoasallad med rostade grönsaker - 100 kr</h2>
             </div>
 
@@ -54,16 +111,22 @@
         </section>
         <section class="menu">
             <div>
-                <img src="grillade_lammracks_med_rosmarin.webp" alt="Grillat lamm">
+                <img width="580" height="580" src="grillade_lammracks_med_rosmarin.webp"
+                    srcset="grillade_lammracks_med_rosmarin.webp 580w, grillade_lammracks_smallest.webp 300w"
+                    sizes="(max-width: 900px) 300px, 580px" alt="Grillat lamm">
                 <h2>Grillad lammracks med rosmarinsås och karamelliserade rotfrukter - 150 kr</h2>
             </div>
             <div>
-                <img src="pankopanerad-spatta-med-brynt-smoremulsion-och-frasch-gurksallad-foto-sanna-livijn-wexell-original-800x800_smaller.webp"
-                    alt="stekt flundra">
+                <img width="600" height="600"
+                    src="pankopanerad-spatta-med-brynt-smoremulsion-och-frasch-gurksallad-foto-sanna-livijn-wexell-original-800x800_smaller.webp"
+                    srcset="pankopanerad-spatta-med-brynt-smoremulsion-och-frasch-gurksallad-foto-sanna-livijn-wexell-original-800x800_smaller.webp 600w, pankopanerad-spatta_smallest.webp 300w"
+                    sizes="(max-width: 900px) 300px, 600px" alt="stekt flundra">
                 <h2>Pankostekt hälleflundra med saffransrisotto och smörad spenat - 120 kr</h2>
             </div>
             <div>
-                <img src="imagen_blog_confitpato02-min_smaller.webp" alt="ankbröst">
+                <img width="600" height="600" src="imagen_blog_confitpato02-min_smaller.webp"
+                    srcset="imagen_blog_confitpato02-min_smaller.webp 600w, imagen_blog_confitpato02-min_smallest.webp 300w"
+                    sizes="(max-width: 900px) 300px, 600px" alt="ankbröst">
                 <h2>Confiterad ankbröst med apelsinsås och gratinerad potatisterrin - 100 kr</h2>
             </div>
 
